@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-workflow.json": "file:///home/kevtamariz/Final/ktamariz_finalproject_socialmedia/.github/workflows/deploy.yaml"
+    }
+}
