@@ -20,8 +20,7 @@ jobs:
         env:
           DOCKERHUB_REPO: ${{ secrets.DOCKERHUB_REPO }}
         run: |
-          cd client \
-          docker build -t $DOCKERHUB_REPO:client.v1.0.0  .
+          cd client && docker build -t $DOCKERHUB_REPO:client.v1.0.0  .
       - name: Docker push
         env:
           DOCKERHUB_REPO: ${{ secrets.DOCKERHUB_REPO }}
