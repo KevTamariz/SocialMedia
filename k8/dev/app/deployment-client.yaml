@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-app
+  labels:
+    app: client-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client-app
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        app: client-app
+        tier: frontend
+    spec:
+      containers:
+      - name: client-app
+        image: kevtamariz/app1:client.v1.0.0
+        ports:
+        - containerPort: 3000

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-app
+  labels:
+    app: server-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: server-app
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: server-app
+        tier: backend
+    spec:
+      containers:
+      - name: server-app
+        image: kevtamariz/app1:api.v1.0.0
+        ports:
+        - containerPort: 8800

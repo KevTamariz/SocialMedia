@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: gcpsm-secret
+  labels:
+    type: gcpsm
+type: Opaque
+stringData:
+  secret-access-credentials: |-
+    {
+      "type": "service_account",
+      "project_id": "final-project1-370316",
+      "private_key_id": "ec58b863017e662c3c144f2f4d5c89e0dd196a3b",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCqX/mUf2y1UpYm\niQ/0LzBwI1vocI/Q5FPNdmmYhbhdaN+UYyKPDw+cKddfvcJR1hO5/p0W1L4llVtu\ncFOvz2LySE6L+P3aF42hRLOW+N4rDJPffMfA6GF/m3Lfiqi/eDAijvu/llO3ByGj\n4G846hUX+QV1LPyBurDV40i8htKXknJUlyRWsdVKatNy1LjMckQ30SHICWvRJuq9\neBkOVqobaPudG5oZw3PpktOQrHRxtNkO/wN0xLX5upFW1Z1MTndhqjc0WL6r/wix\nNfoW7NQ6wwYif/x6JoPLaJ007u+xhibQlcBmMi57oVrbV53rwT55dXpICuQv2VAg\nOpPuDNfRAgMBAAECggEABZwaIch1zf0ZhkyMRs4gdkrFwZAmPhqsgzb/SFc70DCO\nLwq6FjOI4CuVBLkg6zSlKuI+LiSkW6SwsWDXspHdqExW8L8qrZoJruoODz4jw49b\nFZhcU+ba4fqedEuSnZZRoGuskJz8penBUu3mf51egy7u/fIUoNlirfI5QILgb37k\nTCqfXo4hlxSpzgQBoOwysyOmUJK1SuJSQkKdnRa6ap6HTbcuy4/qWLGq8F9hSQEg\n+PJPh3O8eR64ljHNRa2E3bq3AbIH3TPVjIQzfdvIZgUGh0u4K2EgcTQvXMaqzjmK\n0FbFaaA0RKc2mutQsgTnOBRFMSPQPOZC6reRQQt2eQKBgQDXSNiqknwfw100q7XJ\n3evrJnBmta4ITXg5wKsiLvk2EODIsPWqB+Nr/j/I/wp8hmvdzpjqohD079M/dvlg\nYLTR8x6CCM0ivZh5PSbvoIOZCMiYFWlI2ow26dcZvlH1Ud7Fkl6eiEEEOUvzhY5O\nV2G1M0t9iPtSD2b8OAb2yDtaaQKBgQDKmMvF+7skQ2Lfi9coH1G7xuDCKdRHdgac\n3oEVGanS96kk6MxhuRTR0st8GRdTDzoYcRRvMCAmqrSX9BI4kBkOJHaXoDBi6gg3\nLUNfdSXNFKeaGdADljIGun4fprddW5+ay5Lw4gGbz1k+VLaY7j4VHhEKropMcqGY\nlaXv6YLVKQKBgDptALA6FQmhwZfbyfhBDBfDVNnrEJIcRDaYPVmHmga8SeTtcZ51\niZjzZWgtHzFwYbHOsd1romJ2+8PLjB5F4IziCDOOI+37unecywZZb52Grrnnha1J\n8qesir3n0uJbF7RS5u7rV4nH6v7qDhbgzBmbFC+7j0lT+MUWh31OFh2RAoGBALxD\n8xCfFc/kAuxjgeQZ/pT1ggVMY6SojAqYRfG6sHKIjJjs8IhbOnqlXUyL8H3R55Ww\n92E/opDsDvgp6gi/91iKD95lELHKcyn7GOGK9j62U+1C0WeT2hcglHWLMlhB/XYW\neQz5qK8GpxLiG/DPa8ep8gIwIfpah8pIPjRMlbTJAoGASAlaGZh4pXN3nvPX9Fjw\n1KiQ41c/V4X/Pb4Pf3Q6RnyiQTg/ofcWSur+7B4dbcAvw5s5FWMqES+2szfg3glT\nvPf8zgVBHuM6n6XGjUg+dUZGq2ODRynvbfk/p9ddK8OQ+11FyGSBT/etvagID6uS\nmqx3V8ftZuzhZHeNbOl0ne8=\n-----END PRIVATE KEY-----\n",
+      "client_email": "terra-account@final-project1-370316.iam.gserviceaccount.com",
+      "client_id": "100570777846161791220",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terra-account%40final-project1-370316.iam.gserviceaccount.com"
+    }
