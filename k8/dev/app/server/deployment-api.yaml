@@ -25,10 +25,12 @@ spec:
           - name: DB-USER
             valueFrom:
               secretKeyRef:
+                name: db-user
                 key: db-user
           - name: DB-PASS
             valueFrom:
               secretKeyRef:
+                name: db-pass
                 key: db-pass
       - name: cloud-sql-proxy
         # It is recommended to use the latest version of the Cloud SQL proxy
