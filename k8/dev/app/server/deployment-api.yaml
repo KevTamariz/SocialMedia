@@ -71,16 +71,6 @@ spec:
         # Resource configuration depends on an application's requirements. You
         # should adjust the following values based on what your application
         # needs. For details, see https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
-        resources:
-          requests:
-            # The proxy's memory use scales linearly with the number of active
-            # connections. Fewer open connections will use less memory. Adjust
-            # this value based on your application's requirements.
-            memory: "4Gi"
-            # The proxy's CPU use scales linearly with the amount of IO between
-            # the database and the application. Adjust this value based on your
-            # application's requirements.
-            cpu:    "2"
       volumes:
       - name: serv-account
         secret:
