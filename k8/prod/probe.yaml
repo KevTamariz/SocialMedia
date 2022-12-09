@@ -16,5 +16,5 @@ spec:
   targets:
     staticConfig:
       static:
-      - https://app.ktamariz.tk
+#      - https://app.ktamariz.tk
       - https://monitor.ktamariz.tk

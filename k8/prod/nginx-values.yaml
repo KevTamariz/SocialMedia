@@ -12,6 +12,24 @@ controller:
         prometheus.io/scrape: "true"
         prometheus.io/port: "10254"
 
+    serviceMonitor:
+      enabled: true
+      additionalLabels:
+        release: prometheus-stack
+      ## The label to use to retrieve the job name from.
+      ## jobLabel: "app.kubernetes.io/name"
+      namespace: monitoring
+      namespaceSelector: {}
+      ## Default: scrape .Release.Namespace only
+      ## To scrape all, use the following:
+      ## namespaceSelector:
+      ##   any: true
+      scrapeInterval: 30s
+      # honorLabels: true
+      targetLabels: []
+      relabelings: []
+      metricRelabelings: []
+
     
 
   
